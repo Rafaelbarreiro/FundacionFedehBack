@@ -3,10 +3,11 @@ const axios = require("axios");
 
 const populateUser = async () => {
     const user = {
-      username: "rafaelbarreiro",
-      email: "rafael84barreiro@gmail.com",
+      username: "Fundación Fedeh",
+      email: "Fundacionfedehweb@gmail.com",
       isAdmin: "true"
     };
+    console.log('populate')
     await Users.create(user);
   };
   const getUsers = async (req, res) => {
