@@ -25,7 +25,8 @@ module.exports = (sequelize) => {
       }
     },
     image: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      defaultValue: "false",
     },
     status: {
       type: DataTypes.ENUM('active', 'inactive', 'banned', 'deleted'),
