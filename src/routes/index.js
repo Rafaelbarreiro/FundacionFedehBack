@@ -5,6 +5,7 @@ const { Router } = require('express');
 const users = require("./users.js");
 const populate = require("./populate.js");
 const email = require("./email.js")
+const article = require("./article.js")
 
 const router = Router();
 
@@ -12,7 +13,8 @@ const router = Router();
 // Ejemplo: router.use('/auth', authRouter);
 router.use("/users", users);
 router.use("/populateDB", populate);
-router.use("/email", email)
+router.use("/email", email);
+router.use("/articles", article)
 
 module.exports = router;
 

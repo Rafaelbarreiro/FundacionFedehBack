@@ -4,7 +4,7 @@ const axios = require("axios");
 const populateUser = async () => {
     const user = {
       username: "Fundación Fedeh",
-      email: "Fundacionfedehweb@gmail.com",
+      email: "fundacionfedehweb@gmail.com",
       isAdmin: "true"
     };
     console.log('populate')

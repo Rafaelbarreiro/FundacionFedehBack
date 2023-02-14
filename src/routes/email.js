@@ -7,4 +7,4 @@ router.post("/register", sendEmailRegister)
 router.post('/', sendEmail)
 
 
-module.exports = router;
+module.exports = router; 

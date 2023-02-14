@@ -32,6 +32,10 @@ module.exports = (sequelize) => {
       type: DataTypes.ENUM('active', 'inactive', 'banned', 'deleted'),
       defaultValue: "active",
     },
+    newsletter:{
+      type: DataTypes.STRING,
+      defaultValue: "false",
+    },
     isAdmin: {
       type: DataTypes.STRING,
       defaultValue: "false",
