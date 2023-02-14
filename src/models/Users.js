@@ -34,7 +34,7 @@ module.exports = (sequelize) => {
     },
     newsletter:{
       type: DataTypes.STRING,
-      defaultValue: "true",
+      defaultValue: "false",
     },
     isAdmin: {
       type: DataTypes.STRING,
