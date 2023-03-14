@@ -19,13 +19,13 @@
 // MMMMWNXXXXXXXNWMMMMMMMMMMMMMMMMMMMMWNNXXXNWMWXXXXXXXXXWMNXNWMMMMMMMMMMMMMMMMMMMMMMMWWNNXXNWWNXXXXXXXXWMMMMWXXXXXXXXNWMMMMMM
 // MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import { listen } from './src/app.js';
-import { conn } from './src/db.js';
+const server = require('./src/app.js');
+const { conn } = require('./src/db.js');
 const port = process.env.PORT || 3001;
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  listen(3001, () => {
+  server.listen(3001, () => {
     console.log(`%s listening at ${port}`); // eslint-disable-line no-console
   });
 });
