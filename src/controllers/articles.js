@@ -12,7 +12,7 @@ const populateArticles = async () => {
             imgdetail: p.imgdetail
         })
     }
-};
+}; 
 const getAllArticles = async (req, res) => {
     try {
         const articles = await Articles.findAll();
