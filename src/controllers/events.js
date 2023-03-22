@@ -21,7 +21,7 @@ const getAllEvents = async (req, res) => {
         res.status(400).json(error.message)
     }
 }
-const geteventByID = async (req, res) =>{
+const getEventByID = async (req, res) =>{
     const { id } = req.params;
     try {
         const event = await Events.findByPk(id)
@@ -39,4 +39,4 @@ const geteventByID = async (req, res) =>{
     }
 }
 
-module.exports = {populateEvents, getAllEvents, geteventByID}
+module.exports = {populateEvents, getAllEvents, getEventByID}
