@@ -16,7 +16,8 @@ const populateEvents = async () => {
 const getAllEvents = async (req, res) => {
     try {
         const events = await Events.findAll();
-        res.status(200).json(events)
+        const reverse = events.reverse()
+        res.status(200).json(reverse)
     } catch (error) {
         res.status(400).json(error.message)
     }

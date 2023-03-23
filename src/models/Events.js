@@ -22,6 +22,9 @@ module.exports = (sequelize) => {
         },
         imgdetail:{
             type: DataTypes.ARRAY(DataTypes.STRING)
+        },
+        date:{
+            type: DataTypes.DATEONLY
         }
     })
 }
