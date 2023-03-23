@@ -9,7 +9,8 @@ const populateEvents = async () => {
             img: p.img,
             subtitle: p.subtitle,
             detail: p.detail,
-            imgdetail: p.imgdetail
+            imgdetail: p.imgdetail,
+            date: p.date
         })
     }
 }; 

@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
 
-    sequelize.define('events',{
+    sequelize.define('comunications',{
         id: {
             type: DataTypes.SMALLINT,
             primaryKey: true,
@@ -25,6 +25,13 @@ module.exports = (sequelize) => {
         },
         date:{
             type: DataTypes.STRING
-        }
+        },
+        status:{
+            type: DataTypes.ENUM('active', 'paused', 'deleted'),
+            defaultValue: 'active'
+        },
+        /* archivo:{
+            tupe: DataTypes.BLOB
+        } */
     })
 }
