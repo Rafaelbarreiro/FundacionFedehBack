@@ -8,6 +8,15 @@
         "imgdetail": [],
         "date": "23 Marzo 2023",
         "status": "active"
+    },
+    {
+        "title": "CAMPAÑA DE DONACION",
+        "subtitle":"Convertite en Héroe",
+        "img": "https://res.cloudinary.com/dhmz7s3gc/image/upload/v1686096769/donacion2405_txykgk.jpg",
+        "detail":[ "Aún no existe forma de sintetizar o sustituir la sangre. La única manera de contar con ella es que tomemos conciencia de la importancia de donar sangre de manera VOLUNTARIA y RECURRENTE."],
+        "imgdetail": [],
+        "date": "24 Mayo 2023",
+        "status": "active"
     }
     
 ]
